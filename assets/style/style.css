@@ -140,7 +140,8 @@ header {
     background-color: #474a51;
     border-radius: 15px;
     cursor: pointer;
-    padding: 20px 80px;
+    width: 300px;
+    height: 80px;
     border: none;
     box-shadow: 0 4px 6px 0 #888;
 }
@@ -429,6 +430,21 @@ footer {
         flex-direction: column;
         text-align: center;
         padding-bottom: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .mobile_nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .mobile_nav ul li a {
+        color: black;
+    }
+
+    .mobile_nav ul li:last-child {
+        margin-bottom: 0;
     }
 
     .open {
@@ -443,6 +459,51 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
+
+
+    .banner-principal {
+        background-color: #f6f6f6;
+        padding: 40px 0px 40px;
+    }
+
+    .pagina-principal {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo-texto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .conteudo-btn {
+        padding-top: 35px;
+    }
+    
+    .conteudo-btn button {
+        width: 300px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .sobre_mim {
         display: flex;
@@ -471,6 +532,11 @@ footer {
     .footer_agrup {
         display: flex;
         flex-direction: column;
+
+    }
+
+    .footer_icons {
+        padding-top: 20px;
     }
 }
 
