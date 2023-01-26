@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 1444px;
+    max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -205,8 +205,6 @@ header {
 #projetos h2 {
     display: flex;
     justify-content: center;  
-    padding-bottom: 30px;  
-    margin-bottom: 15px;
     font-size: 50px;
     text-transform: uppercase; 
     font-family: 'Roboto', sans-serif;
@@ -381,6 +379,26 @@ footer {
 
 /* Fim Footer */
 
+
+
+/* Edit Scrool */
+
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #474a51;
+    border-radius: 25px;
+    border: 2px solid white;
+}
+
+/* Edit Scrool */
+
 .mobile_btn {
     display: none;
 }
@@ -460,10 +478,12 @@ footer {
         flex-direction: column;
     }
 
-
-
     .banner-principal {
         background-color: #f6f6f6;
+        padding: 55px 0px 55px;
+    }
+
+    #sobre {
         padding: 40px 0px 40px;
     }
 
@@ -478,7 +498,13 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        text-align: center;
+        text-align: center;  
+    }
+
+    .conteudo-texto h2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 30px;
     }
 
     .conteudo-btn {
@@ -491,19 +517,9 @@ footer {
         margin-bottom: 10px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .sobre_mim img {
+        width: 300px;        
+    }
 
     .sobre_mim {
         display: flex;
@@ -521,9 +537,53 @@ footer {
 
     }
 
-    .txt_sobre {
-        max-width: 300px;
+    .projetos_base {
+        text-align: center;        
     }
+
+    #projetos {
+        background-color: #f6f6f6;
+        padding: 40px 0px 40px;
+    }
+
+    .txt_tec {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .txt_sobre {
+        max-width: 350px;
+    }
+
+    .txt_sobre h2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 40px;
+        text-transform: uppercase; 
+    }
+    
+    .txt_sobre p {
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    #projetos h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+
+    .txt_proj p {
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    
 
     .txt_proj {
         max-width: 300px;
@@ -539,21 +599,3 @@ footer {
         padding-top: 20px;
     }
 }
-
-/* Edit Scrool */
-
-::-webkit-scrollbar {
-    width: 11px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #474a51;
-    border-radius: 25px;
-    border: 2px solid white;
-}
-
-/* Edit Scrool */
