@@ -433,6 +433,17 @@ footer {
         max-width: 70%;
     }
 
+    .conteudo-btn button {
+        background-color: #474a51;
+        border-radius: 15px;
+        cursor: pointer;
+        width: 200px;
+        height: 80px;
+        border: none;
+        box-shadow: 0 4px 6px 0 #888;
+        margin: 10px;
+    }
+
 }
 
 @media screen and (max-width: 880px) {
