@@ -101,7 +101,8 @@ header {
 
 .banner-principal {
     background-color: #f6f6f6;
-    padding: 1.5% 7%;
+    padding: 1.5% 4%;
+    display: flex;
 }
 
 .pagina-principal {
@@ -126,14 +127,14 @@ header {
 }
 
 .conteudo-img img {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .conteudo-btn {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .conteudo-btn button {
