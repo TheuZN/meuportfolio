@@ -274,7 +274,6 @@ header {
 #habilidades h2 {
     display: flex;
     justify-content: center;  
-    padding-bottom: 30px;  
     margin-bottom: 15px;
     font-size: 50px;
     text-transform: uppercase; 
@@ -369,7 +368,7 @@ footer {
 .footer_icons a img {
     width: 70px;
     height: 70px;
-    padding-right: 20px;
+    padding: 20px 20px;
 }
 
 .footer_contato {
@@ -487,6 +486,14 @@ footer {
         padding: 40px 0px 40px;
     }
 
+    .agrupador_cards{
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: 100%;
+        margin: 12px;
+    }
+
     .pagina-principal {
         display: flex;
         flex-wrap: wrap;
@@ -534,7 +541,6 @@ footer {
     .projetos_base img {
         width: 300px;
         padding-bottom: 20px;
-
     }
 
     .projetos_base {
@@ -583,7 +589,16 @@ footer {
         text-align: center;
         line-height: 1.5rem;
     }
+
+    #habilidades {
+        padding: 40px 0px 40px;
+    }
     
+    #habilidades h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
 
     .txt_proj {
         max-width: 300px;
@@ -592,6 +607,7 @@ footer {
     .footer_agrup {
         display: flex;
         flex-direction: column;
+        text-align: center;
 
     }
 
