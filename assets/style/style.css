@@ -33,7 +33,7 @@ header {
 }
 
 .header_container {
-    margin: 0 auto;
+    padding: 0 7%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -102,7 +102,7 @@ header {
 
 .banner-principal {
     background-color: #f6f6f6;
-    padding: 75px 0px 75px;
+    padding: 1.5% 7%;
 }
 
 .pagina-principal {
@@ -112,6 +112,7 @@ header {
 }
 
 .conteudo-texto {
+    max-width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -126,7 +127,7 @@ header {
 }
 
 .conteudo-img img {
-    width: 700px;
+    max-width: 100%;
 }
 
 .conteudo-btn {
@@ -161,7 +162,7 @@ header {
 /* Início Sobre */
 
 #sobre {
-    padding: 75px 0px 75px;
+    padding: 3% 7%;
 }
 
 .sobre_mim {
@@ -199,7 +200,7 @@ header {
 
 #projetos {
     background-color: #f6f6f6;
-    padding: 75px 0px 75px;
+    padding: 3% 7%;
 }
 
 #projetos h2 {
@@ -268,7 +269,7 @@ header {
 /* Início Habilidades */
 
 #habilidades {
-    padding: 75px 0px 75px;
+    padding: 3% 7%;
 }
 
 #habilidades h2 {
@@ -406,7 +407,7 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 880px) {
 
     .header_container {
         padding: 0.2rem 0.5rem;
@@ -479,7 +480,7 @@ footer {
 
     .banner-principal {
         background-color: #f6f6f6;
-        padding: 55px 0px 55px;
+        padding: 40px 0px 40px;
     }
 
     #sobre {
@@ -502,9 +503,6 @@ footer {
     }
 
     .conteudo-texto {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         text-align: center;  
     }
 
