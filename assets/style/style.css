@@ -117,7 +117,7 @@ header {
 .banner-principal {
     background-color: #f6f6f6;
     padding: 1.5% 4%;
-    min-height: 85vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
 
