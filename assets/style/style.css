@@ -118,13 +118,13 @@ header {
     background-color: #f6f6f6;
     padding: 1.5% 4%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 90vh;
 }
 
 .pagina-principal {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -168,7 +168,7 @@ header {
     opacity: 0.8;
 }
 
-.conteudo-btn button a {
+.conteudo-btn a button {
     color: white;
     font-size: 30px;
 }
@@ -249,15 +249,12 @@ header {
     padding: 20px 40px;
     border: none;
     box-shadow: 0 4px 6px 0 #888;
+    color: white;
+    font-size: 20px;
 }
 
 .btn-proj:hover {
     opacity: 0.8;
-}
-
-.btn-proj a {
-    color: white;
-    font-size: 20px;
 }
 
 /* Fim Projetos */
@@ -391,7 +388,6 @@ footer {
         flex-wrap: wrap-reverse;
         justify-content: center;
         text-align: center;  
-
     }
 
     .conteudo-texto {
