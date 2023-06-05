@@ -55,6 +55,7 @@ header {
     flex-wrap: wrap;
     height: 60px;
     justify-content: space-between;
+    margin: 0 5%;
 }
 
 .header_logo {
@@ -126,6 +127,7 @@ header {
 .pagina-principal {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .conteudo-texto {
@@ -143,7 +145,7 @@ header {
 }
 
 .conteudo-img img {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .conteudo-btn {
@@ -157,8 +159,8 @@ header {
     background-color: #474a51;
     border-radius: 15px;
     cursor: pointer;
-    width: 300px;
-    height: 80px;
+    width: 8em;
+    height: 3em;
     border: none;
     box-shadow: 0 4px 6px 0 #888;
     margin: 10px;
@@ -187,6 +189,7 @@ header {
 .sobre_mim img {
     width: 350px;
     margin: 20px;
+    border-radius: 15px;
 }
 
 .txt_sobre {
@@ -261,71 +264,52 @@ header {
 
 /* Início Habilidades */
 
-.agrupador_cards {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px 0 30px;
+#habilidades a {
+    color: #0000ff;
+    font-weight: 900;
+    text-decoration: underline;
 }
 
-.cards {
-    width: 300px;
-    height: 500px;
-    border-radius: 20px;
-    background-color: #f6f6f6;
-    box-shadow: 0 4px 6px 0 #888;
-    margin: 15px;
+#habilidades img {
+    width: 50px;
+    margin: 10px 30px 10px 0;
 }
 
-.hab_imagem{
-    display: flex;
-    justify-content:center;
-}
-
-.img_hab {
-    width: 100px;
-    height: 100px;
-    padding: 30px 0 30px;
-}
-
-.hab_titulo {
-    display: flex;
-    justify-content:center;
-    font-size: 30px;
+.accordion {
+    margin: 0 auto;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.hab_texto {
-    display: flex;
-    justify-content:center;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 17px;
-    padding: 0 10px 20px 10px;
+.item-accordion {
+    background-color: #f6f6f6;
+    padding: 30px;
+    border-radius: 30px;
 }
 
-.hab_btn {
+.title-accordion{
     display: flex;
-    justify-content:center;
-}
-
-.hab_btn_conf {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #474a51;
-    border-radius: 5px;
+    align-items: center;
     cursor: pointer;
-    padding: 10px 15px;
-    border: none;
-    box-shadow: 0 4px 6px 0 #888;
+    font-size: 35px;
 }
 
-.hab_btn_conf:hover {
-    opacity: 0.8;
+.title-accordion::after{
+    content: "+";
+    font-size: 35px;
+    margin-left: auto;
 }
 
-.hab_btn_conf a {
-    color: white;
-    font-size: 15px;
+.activite-accordion::after{
+    content: "-";
+}
+
+.text-accordion{
+    max-height: 0;
+    overflow: hidden;
+    transition: 500ms ease max-height;
+    font-size: 20px;
+    text-align: justify;
 }
 
 /* Fim Habilidades */
@@ -371,7 +355,7 @@ footer {
     border: 2px solid white;
 }
 
-/* Edit Scrool */
+/*  End Edit Scrool */
 
 .mobile_btn {
     display: none;
@@ -379,42 +363,6 @@ footer {
 
 .mobile_nav {
     display: none;
-}
-
-@media screen and (max-width: 1200px) {
-
-    .pagina-principal {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-        text-align: center;  
-    }
-
-    .conteudo-texto {
-        min-width: 300px;    
-    }
-
-    .conteudo-texto h2 {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 30px;
-    }
-
-    .conteudo-img img {
-        max-width: 70%;
-    }
-
-    .conteudo-btn button {
-        background-color: #474a51;
-        border-radius: 15px;
-        cursor: pointer;
-        width: 200px;
-        height: 80px;
-        border: none;
-        box-shadow: 0 4px 6px 0 #888;
-        margin: 10px;
-    }
-
 }
 
 @media screen and (max-width: 880px) {
@@ -499,12 +447,12 @@ footer {
     .agrupador_cards{
         flex-wrap: wrap;
     }
+
     .cards{
         width: 100%;
         margin: 12px;
     }
     
-
     .pagina-principal {
         display: flex;
         flex-wrap: wrap;
@@ -517,10 +465,14 @@ footer {
         text-align: center;  
     }
 
+    .conteudo-texto h1 {
+        font-size: 4em;
+    }
+
     .conteudo-texto h2 {
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 30px;
+        font-size: 2em;
     }
 
     .conteudo-btn {
@@ -528,13 +480,13 @@ footer {
     }
     
     .conteudo-btn button {
-        width: 300px;
-        height: 80px;
+        width: 8em;
+        height: 2em;
         margin-bottom: 10px;
     }
 
     .sobre_mim img {
-        width: 300px;        
+        width: 90%;        
     }
 
     .sobre_mim {
@@ -548,7 +500,7 @@ footer {
     }
 
     .projetos_base img {
-        width: 300px;
+        width: 80%;
         padding-bottom: 20px;
     }
 
@@ -561,13 +513,19 @@ footer {
         padding: 40px 0px 40px;
     }
 
+    .titulo {
+        font-size: 40px;
+    }
+
     .txt_tec {
         text-align: center;
         font-size: 18px;
+        padding: 0 5%;
     }
 
     .txt_sobre {
         max-width: 350px;
+        padding: 3%;
     }
 
     .txt_sobre h2 {
@@ -599,16 +557,6 @@ footer {
         line-height: 1.5rem;
     }
 
-    #habilidades {
-        padding: 40px 0px 40px;
-    }
-    
-    #habilidades h2 {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-size: 40px;
-    }
-
     .txt_proj {
         max-width: 300px;
     }
@@ -617,7 +565,6 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
-
     }
 
     .footer_icons {
