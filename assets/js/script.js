@@ -10,6 +10,14 @@ function menuShow() {
     }
 }
 
+function menuClose() {
+  let menuMobile = document.querySelector('.mobile_nav');
+  if (menuMobile.classList.contains('open')) {
+      menuMobile.classList.remove('open');
+      document.querySelector('.icon').src = "assets/img/open.svg";
+  }
+}
+
 // Accordion Habilidades
 const accordionTitles = document.querySelectorAll(".title-accordion");
 

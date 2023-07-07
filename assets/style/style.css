@@ -249,7 +249,9 @@ header {
     background-color: #474a51;
     border-radius: 15px;
     cursor: pointer;
-    padding: 20px 40px;
+    width: 8em;
+    height: 3em;
+    margin-right: 20px;
     border: none;
     box-shadow: 0 4px 6px 0 #888;
     color: white;
@@ -511,6 +513,11 @@ footer {
     #projetos {
         background-color: #f6f6f6;
         padding: 40px 0px 40px;
+    }
+
+    .btn-proj {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .titulo {
