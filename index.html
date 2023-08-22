@@ -23,9 +23,11 @@
                     <div class="header_nav">
                         <ul>
                             <li><a href="#">Início</a></li>
-                            <li><a href="#about">Sobre Mim</a></li>
+                            <li><a href="#about">Sobre</a></li>
                             <li><a href="#projects">Projetos</a></li>
                             <li><a href="#skills">Habilidades</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                            <li><a href="assets/next.html">Contato</a></li>
                         </ul>
                     </div>
                 </div>
@@ -38,9 +40,10 @@
             <div class="mobile-nav">
                 <ul>
                     <li class="nav_item"><a onclick="closeMenu()" href="#" class="nav-link">Início</a></li>
-                    <li class="nav_item"><a onclick="closeMenu()" href="#about" class="nav-link">Sobre Mim</a></li>
+                    <li class="nav_item"><a onclick="closeMenu()" href="#about" class="nav-link">Sobre</a></li>
                     <li class="nav_item"><a onclick="closeMenu()" href="#projects" class="nav-link">Projetos</a></li>
                     <li class="nav_item"><a onclick="closeMenu()" href="#skills" class="nav-link">Habilidades</a></li>
+                    <li class="nav_item"><a onclick="closeMenu()" href="#contact" class="nav-link">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -224,8 +227,17 @@
 
             <div class="accordion">
                 <div class="item-accordion">
+                    <h3 class="title-accordion"><img src="assets/img/react.png" alt=""> React</h3>
+                    <p class="text-accordion">O ReactJS é uma das bibliotecas de JavaScript mais populares para desenvolvimento de aplicativos web ou para dispositivos móveis. Criado pelo Facebook, o React contém uma coleção de trechos de código de JavaScript reutilizáveis chamados componentes, usados para a construção da interface do usuário (UI).
+                    <a href="https://www.hostinger.com.br/tutoriais/o-que-e-react-javascript" target="_blank">Veja mais</a>
+                    </p>                    
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="item-accordion">
                     <h3 class="title-accordion"> <img src="assets/img/git.png" alt=""> Git</h3>
-                    <p class="text-accordion">o GIT é um Sistema de Controle de Versões Distribuído ou DVCS. Estes sistemas de controle possuem a função de registrar quaisquer alterações feitas em cima de um código, armazenando essas informações e permitindo que, caso seja necessário, um programador possa regredir a versões anteriores de uma aplicação de modo simples e rápido. Este tipo de sistema também simplifica muito o processo de compartilhamento de um projeto com um time, por exemplo, ou com outros programadores.
+                    <p class="text-accordion">GIT é um Sistema de Controle de Versões Distribuído ou DVCS. Estes sistemas de controle possuem a função de registrar quaisquer alterações feitas em cima de um código, armazenando essas informações e permitindo que, caso seja necessário, um programador possa regredir a versões anteriores de uma aplicação de modo simples e rápido. Este tipo de sistema também simplifica muito o processo de compartilhamento de um projeto com um time, por exemplo, ou com outros programadores.
                     <a href="https://kenzie.com.br/blog/o-que-e-git/" target="_blank">Veja mais</a>
                     </p>                    
                 </div>
@@ -234,7 +246,7 @@
             <div class="accordion">
                 <div class="item-accordion">
                     <h3 class="title-accordion"> <img src="assets/img/icon-github.png" alt=""> GitHub</h3>
-                    <p class="text-accordion">o GitHub é um serviço baseado em nuvem que hospeda um sistema de controle de versão (VCS) chamado Git. Ele permite que os desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso. Um sistema de controle de versão ajuda a acompanhar as mudanças feitas no código base. E mais, ele também registra quem efetuou a mudança e permite a restauração do código removido ou modificado.
+                    <p class="text-accordion">GitHub é um serviço baseado em nuvem que hospeda um sistema de controle de versão (VCS) chamado Git. Ele permite que os desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso. Um sistema de controle de versão ajuda a acompanhar as mudanças feitas no código base. E mais, ele também registra quem efetuou a mudança e permite a restauração do código removido ou modificado.
                     <a href="https://www.hostinger.com.br/tutoriais/o-que-github" target="_blank">Veja mais</a>
                     </p>                    
                 </div>
@@ -243,10 +255,66 @@
         </div>
     </section>
 
+    <section id="contact">
+        <h1 class="title">Contato</h1>
+        <div class="wrapper">
+            <div class="col-a">
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <img src="assets/img/ico-loca.svg" alt="">
+                        <span>São Paulo - SP</span>
+                    </div>
+
+                    <div class="contact-info">
+                        <img src="assets/img/ico-whatsapp.svg" alt="">
+                        <span>(11) 96563-3837</span>
+                    </div>
+
+                    <div class="contact-info">
+                        <img src="assets/img/ico-email.svg" alt="">
+                        <span>mateus.gon.melo@@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-b">
+                <div class="contact-form">
+                    <div class="massage-form">
+                        <h3>Mensagem</h3>
+                        <span>Envie uma mensagem, <br> será um prazer respondê-lo.</span>
+                    </div>
+                    <form action="https://formsubmit.co/mateus.gon.melo@gmail.com" method="POST">
+                        <fieldset>
+                            <label for="name">Nome:</label>
+                            <input type="text" name="name" minlength="6" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">E-Mail:</label>
+                            <input type="email" name="email" minlength="4" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="subject">Assunto:</label>
+                            <input type="text" name="subject" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                        </fieldset>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="">
+                        <div>
+                            <input class="send-button" value="Enviar" type="submit">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="wrapper">
                 <div class="footer-contact">
-                    <h4>E-Mail: mateus.gon.melo@gmail.com</span>
                     <h4>Desenvolvido por: Mateus Melo</span>
                 </div>
 
@@ -257,6 +325,7 @@
                 </div>
             </div>
     </footer>
+
 
     <script src="assets/script.js"></script>
 </body>
