@@ -555,7 +555,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 333px) {
+@media screen and (max-width: 380px) {
 
     .mobile_btn img {
         width: 3.5rem;
@@ -601,6 +601,18 @@ footer {
 
     .hero-text {
         padding-block: 1.5rem;
+    }
+
+    .contact-info span {
+        font-size: 1.2rem;
+    }
+
+    .contact-info img {
+        width: 3rem;
+    }
+
+    .contact-form span {
+    font-size: 1.7rem;
     }
 }
 /*=== MEDIA QUERIES 1024px =================================*/
