@@ -469,12 +469,17 @@ header {
     font-size: 1.8rem;
 }
 
+.contact-form {
+    text-align: left;
+}
+
+
 .contact-form h3 {
     font-size: 3rem;
     margin-block: 2rem;
 }
 
-.contact-form span {
+.contact-form .massage-form span {
     margin-bottom: 3rem;
     font-size: 2rem;
 }
@@ -489,6 +494,11 @@ form {
     font-size: 2.2rem;
     margin-top: 2rem;
     cursor: pointer;
+}
+
+.message {
+    color: red;
+    font-size: 1.5rem;
 }
 
 /* FOOTER */

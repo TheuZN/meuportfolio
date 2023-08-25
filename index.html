@@ -32,17 +32,17 @@
                 </div>
 
                 <div class="mobile_btn">
-                    <button onclick="menuShow()"><img class="ico" src="assets/img/open.svg" alt=""></button>
+                    <button id="openMenu"><img class="ico" src="assets/img/open.svg" alt=""></button>
                 </div>
             </div>
 
             <div class="mobile-nav">
                 <ul>
-                    <li class="nav_item"><a onclick="closeMenu()" href="#" class="nav-link">Início</a></li>
-                    <li class="nav_item"><a onclick="closeMenu()" href="#about" class="nav-link">Sobre</a></li>
-                    <li class="nav_item"><a onclick="closeMenu()" href="#projects" class="nav-link">Projetos</a></li>
-                    <li class="nav_item"><a onclick="closeMenu()" href="#skills" class="nav-link">Habilidades</a></li>
-                    <li class="nav_item"><a onclick="closeMenu()" href="#contact" class="nav-link">Contato</a></li>
+                    <li class="nav_item"><a id="closeMenu" href="#" class="nav-link">Início</a></li>
+                    <li class="nav_item"><a id="closeMenu" href="#about" class="nav-link">Sobre</a></li>
+                    <li class="nav_item"><a id="closeMenu" href="#projects" class="nav-link">Projetos</a></li>
+                    <li class="nav_item"><a id="closeMenu" href="#skills" class="nav-link">Habilidades</a></li>
+                    <li class="nav_item"><a id="closeMenu" href="#contact" class="nav-link">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -67,8 +67,10 @@
                 </div>
             </div>
             <div class="scrolldown">
-                <span></span>
-                <span></span>
+                <a href="#about">
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
         </div>
     </div>
@@ -178,16 +180,16 @@
 
             <div class="project-base">
                 <div class="project-img">
-                    <a href="" target="_blank"><img src="assets/img/proj6.png" alt=""></a>
+                    <a href="https://golden-gate-bank.netlify.app/" target="_blank"><img src="assets/img/proj6.png" alt=""></a>
                 </div>
 
                 <div class="project-text">
                     <h3>Golden Gate</h3>
                         <p>Projeto feito com intuito de pôr em prática alguns conhecimentos de validação de formulários e mobile first.</p>
                         <h4>Tecnologias utilizadas: HTML, CSS e JavaScript</h4>
-                        <a href="" target="_blank"><button class="btn-project">Vizualizar<img class="ico" src="assets/img/ico-link.svg" alt=""></button></a>
+                        <a href="https://golden-gate-bank.netlify.app/" target="_blank"><button class="btn-project">Vizualizar<img class="ico" src="assets/img/ico-link.svg" alt=""></button></a>
 
-                        <a href="" target="_blank"><button class="btn-project">GitHub<img class="ico" src="assets/img/ico-git.svg" alt=""></button></a>
+                        <a href="https://github.com/TheuZN/goldenGate" target="_blank"><button class="btn-project">GitHub<img class="ico" src="assets/img/ico-git.svg" alt=""></button></a>
                 </div>
             </div>
 
@@ -201,7 +203,7 @@
             <div class="accordion">
                 <div class="item-accordion">
                     <h3 class="title-accordion"> <img src="assets/img/html.png" alt=""> HTML 5</h3>
-                    <p class="text-accordion">Hyper Text Markup Language, ou seja, linguagem de marcação de hipertexto (elementos como textos, imagens e vídeos conectados entre si).Trata-se de uma linguagem de marcação para desenvolver páginas e documentos eletrônicos para a internet, fornecendo informações para usuários, navegadores e mecanismos de busca.        <a href="https://br.godaddy.com/blog/o-que-e-html-e-para-que-serve/" target="_blank">Veja mais</a>   
+                    <p class="text-accordion">Hyper Text Markup Language, ou seja, linguagem de marcação de hipertexto (elementos como textos, imagens e vídeos conectados entre si).Trata-se de uma linguagem de marcação para desenvolver páginas e documentos eletrônicos para a internet, fornecendo informações para usuários, navegadores e mecanismos de busca.<a href="https://br.godaddy.com/blog/o-que-e-html-e-para-que-serve/" target="_blank">Veja mais</a>   
                     </p>                 
                 </div>
             </div>
@@ -286,24 +288,27 @@
                         <fieldset>
                             <label for="name">Nome:</label>
                             <input type="text" name="name" minlength="6" required>
+                            <span class="message"></span>
                         </fieldset>
                         <fieldset>
                             <label for="email">E-Mail:</label>
                             <input type="email" name="email" minlength="4" required>
+                            <span class="message"></span>
                         </fieldset>
                         <fieldset>
                             <label for="subject">Assunto:</label>
                             <input type="text" name="subject" required>
+                            <span class="message"></span>
                         </fieldset>
                         <fieldset>
-                            <label for="mensagem">Mensagem:</label>
-                            <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                            <label for="message">Mensagem:</label>
+                            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                            <span class="message"></span>
                         </fieldset>
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://theuzn.github.io/meuportfolio/assets/next.html">
                         <div>
                             <input class="send-button" value="Enviar" type="submit">
-
                         </div>
                     </form>
                 </div>
@@ -325,7 +330,7 @@
             </div>
     </footer>
 
-
     <script src="assets/script.js"></script>
+
 </body>
 </html>
