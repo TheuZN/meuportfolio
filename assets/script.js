@@ -58,7 +58,7 @@ function fieldVerify(field) {
 // Menu Mobile
 
 const openMenu = document.getElementById("openMenu");
-const closeMenu = document.getElementById("closeMenu");
+const closeMenu = document.getElementsByClassName("nav_item");
 
 openMenu.addEventListener("click", function (){
   let menuMobile = document.querySelector('.mobile-nav');
@@ -69,15 +69,17 @@ openMenu.addEventListener("click", function (){
       menuMobile.classList.add('open');
       document.querySelector('.ico').src = "assets/img/close.svg";
   }
-})
+});
 
-closeMenu.addEventListener("click", function (){
-  let menuMobile = document.querySelector('.mobile-nav');
-  if (menuMobile.classList.contains('open')) {
+for (let i = 0; i < closeMenu.length; i++) {
+  closeMenu[i].addEventListener("click", function (){
+    let menuMobile = document.querySelector('.mobile-nav');
+    if (menuMobile.classList.contains('open')) {
       menuMobile.classList.remove('open');
       document.querySelector('.ico').src = "assets/img/open.svg";
-  }
-})
+    }
+  });
+}
 
 // Accordion Skills
 const accordionTitles = document.querySelectorAll(".title-accordion");

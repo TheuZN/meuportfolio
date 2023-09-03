@@ -62,7 +62,7 @@ section {
 .title {
     font-size: 4rem;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin: 1rem 0 3rem;
     position: relative;
     display: inline-block;
 }
@@ -220,8 +220,7 @@ header {
 
 #hero-section {
     background-color: #f6f6f6;
-    padding-block: 10rem;
-    height: 100vh;
+    padding-block: 17rem;
     display: flex;
     align-items: center;
 }
@@ -274,6 +273,7 @@ header {
     width: 4rem;
     height: 4rem;
     transform: translateY(-4rem) translateX(-50%) rotate(45deg);
+    display: none;
 }
 
 .scrolldown span {
@@ -625,6 +625,7 @@ footer {
     font-size: 1.7rem;
     }
 }
+
 /*=== MEDIA QUERIES 1024px =================================*/
 
 @media screen and (min-width: 1024px) {
@@ -657,14 +658,14 @@ footer {
     }
 
     #hero-section {
-        padding-top: 8rem;
-        padding-bottom: 5rem;
+        height: 100vh;
     }
 
     #hero-section .wrapper {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         'A B';
+        padding-top: 3rem;
     }
 
     #hero-section .col-a {
@@ -697,6 +698,10 @@ footer {
         height: 5rem;
         font-size: 2rem;
         letter-spacing: 0.1rem;
+    }
+
+    .scrolldown {
+        display: block;
     }
 
     /*=== ABOUT 1024px =================================*/
