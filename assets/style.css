@@ -344,7 +344,6 @@ header {
 }
 
 .project-img a img {
-    width: 75%;
     margin-bottom: 3rem;
 }
 
@@ -739,6 +738,10 @@ footer {
 
 .project-text h3 {
     font-size: 4rem;    
+}
+
+.project-img a img {
+    width: 75%;
 }
 
     /*=== SKILLS 1024px =================================*/

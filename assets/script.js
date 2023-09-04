@@ -54,7 +54,6 @@ function fieldVerify(field) {
 }
 
 
-
 // Menu Mobile
 
 const openMenu = document.getElementById("openMenu");
